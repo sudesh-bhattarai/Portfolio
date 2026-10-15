@@ -120,6 +120,9 @@ body{background:var(--bg);color:var(--text)}
 .learning-card{background:radial-gradient(ellipse at 0 0,#A855F712,transparent 58%),var(--card);border-color:var(--line)}
 .learning-list>div svg{color:#EC4899}
 .contact-links,.contact-links>a{border-color:var(--line)}
+.contact-links>a>span:nth-child(2){transition:color .18s ease}
+.contact-links>a:hover>span:nth-child(2),.contact-links>a:focus-visible>span:nth-child(2){color:#D8B4FE}
+
 .contact-form input,.contact-form textarea{border-color:var(--line)}
 .contact-form input:focus,.contact-form textarea:focus{border-color:#A855F7}
 .footer{border-top-color:var(--line);background:var(--bg)}
@@ -138,7 +141,7 @@ body{background:var(--bg);color:var(--text)}
 .section-about{background:#0E1628;border-block:1px solid #1B263B}
 #skills{background:#111827}
 .section-projects{background:#0D1424;border-block:1px solid #1B263B}
-#education{background:#101827}
+#experience{background:#101827}
 #contact{background:#111827}
 .about-copy{max-width:820px;margin:0 0 18px;color:#B8C2D3;font-size:17px;line-height:1.9}
 .about-details .detail-label{color:#C4B5FD;font-size:15px;font-weight:600}
@@ -148,6 +151,28 @@ body{background:var(--bg);color:var(--text)}
 .about-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,72px);align-items:start}
 .about-intro .section-title{margin-bottom:24px}
 .about-copy-list{max-width:610px}
+
+/* Skills section: recognizable brand marks and generously sized skill tiles. */
+#skills .skills-intro{margin-bottom:38px}
+#skills .skills-intro .section-title{margin-bottom:8px}
+#skills .skills-intro>p{margin:0;color:#AEB8CB;font-size:16px;line-height:1.65}
+#skills .skills-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:20px}
+#skills .skill-card{min-height:320px;padding:23px;border:1px solid #303B55;border-radius:10px;background:#151E32;transition:border-color .18s ease,transform .18s ease}
+#skills .skill-card:hover{border-color:#8058C8;transform:translateY(-2px)}
+#skills .skill-head{align-items:flex-start;gap:12px;margin-bottom:20px}
+#skills .skill-head svg{flex:none;margin-top:1px;color:#B58AF7}
+#skills .skill-head h3{font-size:17px;line-height:1.4;color:#F8FAFC}
+#skills .skill-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(68px,auto);gap:10px}
+#skills .skill-tile{min-width:0;display:flex;align-items:center;gap:12px;padding:10px;border:1px solid #34405A;border-radius:8px;background:#101827}
+#skills .skill-tile:only-child{grid-column:1/-1}
+#skills .skill-logo{width:40px;height:40px;flex:none;object-fit:contain}
+#skills .skill-logo-concept{padding:0;color:#C4B5FD;stroke-width:1.7}
+#skills .skill-logo-github{filter:brightness(0) invert(1)}
+#skills .skill-logo-next-js{width:52px;height:34px;padding:0;border-radius:0;background:transparent;filter:brightness(0) invert(1)}
+#skills .skill-label{min-width:0;color:#F1F5F9;font-size:16px;font-weight:550;line-height:1.35;overflow-wrap:anywhere}
+@media(max-width:1000px){#skills .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:700px){#skills .skills-intro{margin-bottom:27px}#skills .skills-intro>p{font-size:15px}#skills .skills-grid{grid-template-columns:1fr;gap:14px}#skills .skill-card{min-height:0;padding:20px}#skills .skill-tiles{gap:9px}#skills .skill-logo{width:36px;height:36px}#skills .skill-logo-next-js{width:48px;height:32px}#skills .skill-label{font-size:15px}}
+@media(max-width:380px){#skills .skill-tiles{grid-template-columns:1fr}}
 .about-copy{max-width:unset;margin:0 0 16px;color:#CBD5E1;font-size:17px;line-height:1.8}
 .about-copy:last-child{margin-bottom:0}
 .about-enjoy{padding:24px;border:1px solid var(--line);border-radius:12px;background:rgba(17,24,39,.78)}
@@ -158,3 +183,227 @@ body{background:var(--bg);color:var(--text)}
 .enjoy-card h4{margin:1px 0 5px;color:var(--text);font-size:16px;line-height:1.4;font-weight:650}
 .enjoy-card p{margin:0;color:#B8C2D3;font-size:14px;line-height:1.6}
 @media(max-width:700px){.about-layout{grid-template-columns:1fr;gap:28px}.about-intro .section-title{margin-bottom:22px}.about-enjoy{padding:20px}.about-enjoy>h3{font-size:22px}.enjoy-card{padding:15px;gap:12px}.enjoy-card-icon{width:38px;height:38px;flex-basis:38px}}
+
+/* Projects showcase: supplied app screenshots sit beside concise project details. */
+#projects .section-title{margin-bottom:28px}
+#projects .projects-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+#projects .project-card{display:grid;grid-template-columns:minmax(260px,.82fr) minmax(0,1.18fr);min-height:270px;overflow:hidden;border:1px solid #303B55;border-radius:12px;background:#151E32;transition:border-color .18s ease,transform .18s ease}
+#projects .project-card:hover{border-color:#7652B8;transform:translateY(-2px)}
+#projects .project-image{position:relative;display:grid;place-items:center;min-width:0;aspect-ratio:16/10;align-self:center;overflow:hidden;border-right:1px solid #303B55;background:#101827}
+#projects .project-screenshot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#projects .project-preview-placeholder{display:flex;flex-direction:column;align-items:center;gap:9px;padding:20px;color:#E2E8F0;text-align:center;font-size:15px;font-weight:600}
+#projects .project-preview-placeholder small{color:#9BA8BD;font-size:12px;font-weight:400;line-height:1.5}
+#projects .preview-mark{display:grid;place-items:center;width:52px;height:52px;border:1px solid #7652B8;border-radius:12px;background:#201A34;color:#C4B5FD}
+#projects .project-logo{position:absolute;right:14px;bottom:14px;max-width:116px;max-height:56px;object-fit:contain;padding:8px 10px;border:1px solid #39445A;border-radius:8px;background:#0D1422}
+#projects .project-info{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:24px 28px}
+#projects .project-info h3{margin:0 0 10px;color:#F8FAFC;font-size:clamp(21px,2.2vw,26px);line-height:1.25;font-weight:650;letter-spacing:-.02em}
+#projects .project-info>p{margin:0;color:#B8C2D3;font-size:15px;line-height:1.7}
+#projects .project-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+#projects .project-tags span{padding:6px 10px;border:1px solid #35415A;border-radius:7px;background:#101827;color:#D6DCE8;font-size:12px;line-height:1.2}
+#projects .project-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:auto;padding-top:20px}
+#projects .project-links a,#projects .project-links>span{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:9px 13px;border:1px solid #46516A;border-radius:8px;color:#E7EAF2;font-size:14px;font-weight:600;text-decoration:none;transition:background-color .18s ease,border-color .18s ease,color .18s ease}
+#projects .project-links a:hover{border-color:#9B78DB;background:#211A33;color:#fff}
+#projects .project-links .project-link-primary{border-color:#7652B8;background:#6543A4;color:#fff}
+#projects .project-links .project-link-primary:hover{border-color:#A184DC;background:#7652B8}
+#projects .project-links .project-link-pending{color:#AAB4C7;cursor:default}
+#projects .project-links .project-link-primary.project-link-pending{border-color:#5D477E;background:#35274B;color:#E2D7F6}
+#projects .project-links .project-link-pending small{font-size:11px;font-weight:400;color:#9BA8BD}
+@media(max-width:800px){#projects .project-card{grid-template-columns:minmax(220px,.78fr) minmax(0,1.22fr);min-height:250px}#projects .project-info{padding:21px}#projects .project-info>p{font-size:14px}}
+@media(max-width:600px){#projects .section-title{margin-bottom:22px}#projects .projects-grid{gap:16px}#projects .project-card{grid-template-columns:minmax(0,1fr);min-height:0}#projects .project-image{width:100%;aspect-ratio:16/9;align-self:auto;border-right:0;border-bottom:1px solid #303B55}#projects .project-info{padding:20px}#projects .project-links{margin-top:0;padding-top:18px}}
+@media(prefers-reduced-motion:reduce){#projects .project-card,#projects .project-links a{transition:none}}
+
+/* Education and recognition cards retain the portfolio's navy and purple theme. */
+#education .section-title{margin-bottom:34px}
+#education .education-block{min-width:0}
+#education .subsection-label{display:block;margin:0 0 16px;padding-bottom:12px;border-bottom-color:#35415A;font-size:clamp(16px,1.5vw,18px);line-height:1.4}
+#education .education-timeline{display:grid;gap:12px}
+#education .education-card{display:flex;align-items:flex-start;min-width:0;border:1px solid #303A53;border-radius:10px;background:#151B2E}
+#education .education-card{gap:15px;padding:19px}
+#education .education-current{border-color:#A855F744}
+#education .education-marker{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border:1px solid #A855F755;border-radius:10px;background:#A855F714;color:#C084FC}
+#education .education-previous .education-marker{border-color:#EC489944;background:#EC489910;color:#F0ABCE}
+#education .education-details{flex:1;min-width:0}
+#education .education-details h4{margin:0 0 8px;color:#F8FAFC;font-size:clamp(17px,1.55vw,20px);font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+#education .education-details>p{margin:0;color:#CBD5E1;font-size:15px;line-height:1.5;overflow-wrap:anywhere}
+#education .education-meta{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:11px}
+#education .education-period,#education .education-current-label,#education .education-chip{display:inline-flex;align-items:center;min-height:27px;padding:4px 9px;border:1px solid #3A465F;border-radius:999px;color:#C6D0E0;font-size:12px;line-height:1.3}
+#education .education-period{border-color:#A855F744;color:#E9D5FF}
+#education .education-current-label{border-color:#A855F744;background:#A855F710;color:#D8B4FE}
+#education .education-chip{background:#101827}
+#certificates.certificate-section{background:#0D1424;border-block:1px solid #1B263B}
+.certificate-section-heading{display:flex;align-items:center;gap:13px;margin-bottom:24px}
+.certificate-section-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border:1px solid #A855F755;border-radius:11px;background:#A855F714;color:#D8B4FE}
+.certificate-eyebrow{margin:0 0 5px;color:#E9A9CD;font:600 10px/1.3 var(--mono);letter-spacing:.1em}
+.certificate-section-heading h2{margin:0;color:#F8FAFC;font-size:clamp(25px,3vw,34px);font-weight:600;letter-spacing:-.03em;line-height:1.25;overflow-wrap:anywhere}
+.certificate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:16px}
+.certificate-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #303A53;border-radius:10px;background:#151B2E;transition:border-color .18s ease,transform .18s ease}
+.certificate-card:hover{border-color:#8657C8;transform:translateY(-2px)}
+.certificate-preview{display:grid;place-items:center;aspect-ratio:3/2;min-width:0;overflow:hidden;border-bottom:1px solid #303A53;background:#101827}
+.certificate-preview>img{width:100%;height:100%;object-fit:contain}
+.certificate-pdf-icon{display:flex;flex-direction:column;align-items:center;gap:6px;color:#D8B4FE}
+.certificate-pdf-icon small{font-size:10px;font-weight:700;letter-spacing:.08em}
+.certificate-info{display:flex;flex:1;flex-direction:column;align-items:flex-start;min-width:0;padding:16px}
+.certificate-type{display:inline-flex;margin:0 0 8px;padding:4px 8px;border:1px solid #EC489944;border-radius:999px;color:#F0ABCE;font-size:11px;font-weight:600;line-height:1.3}
+.certificate-info h3{margin:0 0 6px;color:#F8FAFC;font-size:16px;font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+.certificate-meta{margin:0;color:#AEB8CB;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.certificate-empty{margin:0;padding:18px 20px;border:1px solid #303A53;border-radius:9px;background:#151B2E;color:#AEB8CB;font-size:14px;line-height:1.6}
+.certificate-empty code{color:#E9D5FF;font-family:var(--mono);font-size:.92em}
+.certificate-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:auto;padding-top:14px}
+.view-certificate,.verify-certificate{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;margin-top:4px;padding:8px 10px;border:1px solid #7652B8;border-radius:7px;color:#E9D5FF;font-size:13px;font-weight:600;transition:background-color .18s ease,border-color .18s ease}
+.view-certificate:hover,.verify-certificate:hover{border-color:#A855F7;background:#A855F714}
+.verify-certificate{border-color:#46516A;color:#D8B4FE}
+@media(max-width:1000px){.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){#education .section-title{margin-bottom:28px}.certificate-grid{grid-template-columns:minmax(0,1fr);gap:14px}.certificate-info{padding:17px}}
+
+body{min-width:0;overflow-x:clip}
+.achievement-image{object-fit:cover;border-radius:6px}
+@media(max-width:380px){#education .education-card{gap:12px;padding:15px}#education .education-marker{flex-basis:36px;width:36px;height:36px}#education .education-marker svg{width:18px;height:18px}}
+@media(prefers-reduced-motion:reduce){.certificate-card,.view-certificate,.verify-certificate{transition:none}}
+@media(max-width:380px){.hero-art:before{width:260px;height:260px}}
+
+body{min-width:0;overflow-x:clip}
+
+/* Education, experience, recognition, and certificate collection */
+.section-subtitle{margin:0 0 26px;color:#AEB8CB;font-size:14px;line-height:1.6}
+#education .section-title,#experience .section-title,#achievements .section-title{margin-bottom:8px}
+#education{scroll-margin-top:84px}
+#education .education-experience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:clamp(22px,4vw,52px)}
+#education .education-column,#education .experience-column{min-width:0}
+#education .education-column .section-title,#education .experience-column .section-title{margin-bottom:8px}
+#education .education-timeline{position:relative;display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:0}
+#education .education-item{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);align-items:stretch;gap:12px;padding-bottom:14px}
+#education .education-item:last-child{padding-bottom:0}
+#education .education-item:not(:last-child)::after{position:absolute;left:19px;top:20px;bottom:-20px;width:2px;background:#A855F7;content:""}
+#education .education-marker{position:relative;z-index:1;align-self:start;border-radius:50%}
+#education .education-card{display:block;height:100%;padding:16px}
+#education .education-details h3{margin:0 0 8px;color:#F8FAFC;font-size:clamp(16px,1.45vw,19px);font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+#education .education-details>p{margin:0;color:#CBD5E1;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+#experience .experience-list{display:grid;gap:12px}
+#experience .experience-card{display:flex;align-items:flex-start;gap:14px;min-width:0;padding:18px;border:1px solid #303A53;border-radius:10px;background:#151B2E;transition:border-color .18s ease,transform .18s ease}
+#experience .experience-card:hover{border-color:#8657C8;transform:translateY(-2px)}
+#experience .experience-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border:1px solid #A855F755;border-radius:10px;background:#A855F714;color:#D8B4FE}
+#experience .experience-content{min-width:0}
+#experience .experience-role{display:inline-block;margin:0 0 6px;color:#D8B4FE;font-size:12px;font-weight:650}
+#experience .experience-content h3{margin:0 0 6px;color:#F8FAFC;font-size:16px;font-weight:600;line-height:1.45;overflow-wrap:anywhere}
+#experience .experience-content p{margin:0;color:#CBD5E1;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+#experience .experience-year{display:inline-block;margin-top:8px;color:#AEB8CB;font-size:12px}
+#experience .recognition-section{margin-top:30px;padding-top:24px;border-top:1px solid #303A53}
+#experience .recognition-section .section-title{margin-bottom:16px}
+#achievements .achievement-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:14px}
+#achievements .achievement-card{display:flex;align-items:flex-start;gap:13px;height:100%;min-width:0;padding:18px;border:1px solid #303A53;border-radius:10px;background:#151B2E;transition:border-color .18s ease,transform .18s ease}
+#achievements .achievement-card:hover{border-color:#8657C8;transform:translateY(-2px)}
+#achievements .achievement-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border:1px solid #EC489944;border-radius:10px;background:#EC489910;color:#F0ABCE}
+#achievements .achievement-content{flex:1;min-width:0}
+#achievements .achievement-kind{display:inline-block;margin:0 0 7px;padding:4px 8px;border:1px solid #A855F744;border-radius:999px;background:#A855F710;color:#D8B4FE;font-size:11px;font-weight:600;line-height:1.3}
+#achievements .achievement-event{margin:0 0 5px;color:#F3E8FF;font-size:clamp(16px,1.4vw,19px);font-weight:650;line-height:1.4;overflow-wrap:anywhere}
+#achievements .achievement-result{margin:0;color:#CBD5E1;font-size:14px;line-height:1.5;overflow-wrap:anywhere}
+#achievements .achievement-meta{display:flex;flex-wrap:wrap;gap:6px 9px;margin:8px 0 0;color:#AEB8CB;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+#achievements .achievement-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:11px}
+#achievements .achievement-links a{display:inline-flex;align-items:center;gap:6px;color:#D8B4FE;font-size:13px;font-weight:600;text-decoration:underline;text-decoration-color:#A855F766;text-underline-offset:3px}
+#achievements .achievement-links a:hover{color:#F0ABCE}
+#certificates.certificate-section{scroll-margin-top:82px}
+.certificate-section-heading{align-items:flex-start;margin-bottom:20px}
+.certificate-section-heading>div{min-width:0}
+.certificate-subtitle{margin:7px 0 0;color:#AEB8CB;font-size:14px;line-height:1.55}
+.certificate-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.certificate-filter{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:7px 11px;border:1px solid #35415E;border-radius:999px;background:#151B2E;color:#CBD5E1;font-size:12px;line-height:1.25;cursor:pointer;transition:color .16s ease,border-color .16s ease,background-color .16s ease}
+.certificate-filter:hover{border-color:#8657C8;color:#F3E8FF}
+.certificate-filter[aria-pressed="true"]{border-color:#A855F7;background:#A855F714;color:#F3E8FF}
+.certificate-filter>span{display:inline-grid;place-items:center;min-width:20px;height:20px;padding-inline:5px;border-radius:999px;background:#0D1424;color:#D8B4FE;font-size:10px}
+.certificate-count{margin:0 0 13px;color:#AEB8CB;font-size:12px}
+.certificate-labels{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:8px}
+.certificate-labels .certificate-type{margin:0}
+.certificate-featured{display:inline-flex;align-items:center;padding:4px 8px;border:1px solid #A855F744;border-radius:999px;color:#E9D5FF;font-size:11px;line-height:1.3}
+.certificate-missing-file{color:#929CB0;font-size:12px;line-height:1.4}
+.certificate-more-wrap{display:flex;justify-content:center;margin-top:24px}
+.certificate-more{min-height:42px;padding:9px 15px;border:1px solid #7652B8;border-radius:7px;background:transparent;color:#E9D5FF;font-size:13px;font-weight:600;cursor:pointer;transition:background-color .18s ease,border-color .18s ease}
+.certificate-more:hover{border-color:#A855F7;background:#A855F714}
+@media(max-width:760px){#education .education-experience-grid{grid-template-columns:minmax(0,1fr);gap:28px}}
+@media(max-width:700px){#achievements .achievement-list{grid-template-columns:minmax(0,1fr)}.certificate-filters{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin}.certificate-filter{flex:0 0 auto}.certificate-subtitle{font-size:13px}}
+@media(max-width:380px){#experience .experience-card,#achievements .achievement-card{gap:11px;padding:14px}#experience .experience-icon,#achievements .achievement-icon{flex-basis:36px;width:36px;height:36px}.certificate-section-heading{gap:10px}.certificate-section-icon{flex-basis:36px;width:36px;height:36px}.certificate-filter{font-size:11px;padding-inline:9px}}
+@media(prefers-reduced-motion:reduce){#experience .experience-card,#achievements .achievement-card{transition:none}}
+
+/* Education now lives in About; Experience remains the linked timeline section. */
+#experience{scroll-margin-top:84px}
+#experience .section-title{margin-bottom:8px}
+#experience>.wrap>.section-subtitle{margin-bottom:26px}
+#experience .experience-list{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;max-width:760px}
+#experience .recognition-section{margin-top:30px;padding-top:24px;border-top:1px solid #303A53}
+#experience .recognition-section .section-title{margin-bottom:16px}
+.about-education{min-width:0;padding:23px;border:1px solid #303A53;border-radius:12px;background:rgba(17,24,39,.78)}
+.about-education-heading{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+.about-education-icon{display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;border:1px solid #A855F755;border-radius:10px;background:#A855F714;color:#D8B4FE}
+.about-education-heading h3{margin:0;color:#F8FAFC;font-size:23px;font-weight:600;line-height:1.3;letter-spacing:-.02em}
+.about-education-list{display:grid;margin-top:12px}
+.about-education-item{min-width:0;padding:16px 0;border-top:1px solid #303A53}
+.about-education-item h4{margin:0 0 6px;color:#F8FAFC;font-size:16px;font-weight:650;line-height:1.45;overflow-wrap:anywhere}
+.about-education-item p{margin:0;color:#CBD5E1;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+.about-education-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;color:#AEB8CB;font-size:12px;line-height:1.35}
+.about-education-meta span{display:inline-flex;align-items:center;min-height:26px;padding:4px 9px;border:1px solid #3A465F;border-radius:999px;background:#101827}
+.about-education-meta .about-current-label{border-color:#A855F744;background:#A855F710;color:#D8B4FE}
+@media(max-width:700px){.about-education{padding:20px}.about-education-heading h3{font-size:22px}}
+@media(max-width:380px){.about-education{padding:16px}.about-education-item{padding:14px 0}}
+@media(prefers-reduced-motion:reduce){#experience .experience-card{transition:none}}
+/* Experience timeline and recognition cards. */
+#experience .experience-achievement-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:clamp(30px,5vw,64px)}
+#experience .experience-column,#experience .recognition-section{min-width:0;margin:0;padding:0;border:0}
+#experience .experience-column>.section-title,#experience .recognition-section>.section-title{min-height:44px;margin:0 0 26px}
+#experience .experience-timeline{display:grid;gap:0}
+#experience .experience-entry{display:grid;grid-template-columns:46px minmax(0,1fr);align-items:stretch;gap:16px;min-width:0}
+#experience .timeline-rail{display:flex;flex-direction:column;align-items:center}
+#experience .experience-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border:1px solid #A855F755;border-radius:50%;background:#A855F714;color:#D8B4FE;transition:border-color .18s ease,background-color .18s ease,color .18s ease}
+#experience .experience-entry:hover .experience-icon{border-color:#A855F7;background:#A855F722;color:#F3E8FF}
+#experience .timeline-line{width:1px;flex:1;min-height:44px;margin-top:9px;background:linear-gradient(#A855F799,#A855F722)}
+#experience .experience-content{min-width:0;padding:1px 0 26px;transition:transform .18s ease}
+#experience .experience-entry:hover .experience-content{transform:translateX(2px)}
+#experience .experience-role{display:inline-block;margin:0 0 8px;color:#D8B4FE;font:600 10px/1.4 var(--mono);letter-spacing:.12em}
+#experience .experience-content h3{margin:0 0 6px;color:#F8FAFC;font-size:clamp(19px,2vw,23px);font-weight:600;line-height:1.35;letter-spacing:-.02em;overflow-wrap:anywhere}
+#experience .experience-organization{margin:0 0 13px;color:#E5B4D1;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+#experience .experience-description{margin:0;color:#C2CBD9;font-size:15px;line-height:1.75;overflow-wrap:anywhere}
+#experience .experience-year{display:inline-block;margin-top:10px;color:#AEB8CB;font-size:12px}
+#experience .achievement-list{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:13px}
+#experience .achievement-card{position:relative;display:grid;grid-template-columns:50px minmax(0,1fr);align-items:start;gap:15px;min-width:0;padding:20px;border:1px solid #8657C866;border-radius:12px;background:linear-gradient(120deg,#211A34 0%,#171B30 62%,#151B2E 100%);transition:border-color .18s ease,transform .18s ease,background-color .18s ease}
+#experience .achievement-card:nth-child(2){border-color:#A855F755;background:linear-gradient(120deg,#251B35 0%,#191B30 62%,#151B2E 100%)}
+#experience .achievement-card:hover{border-color:#B58AE8;transform:translateY(-2px)}
+#experience .achievement-icon{display:grid;place-items:center;width:48px;height:48px;color:#D8B4FE;border:1px solid #A855F755;border-radius:12px;background:#A855F714}
+#experience .achievement-card:nth-child(2) .achievement-icon{color:#F0ABCE;border-color:#EC489955;background:#EC489910}
+#experience .achievement-content{min-width:0}
+#experience .achievement-kind{display:inline-flex;margin:0 0 8px;padding:4px 8px;border:1px solid #A855F755;border-radius:999px;background:#A855F710;color:#E9D5FF;font:600 10px/1.3 var(--mono);letter-spacing:.09em}
+#experience .achievement-card:nth-child(2) .achievement-kind{border-color:#EC489955;background:#EC489910;color:#F0ABCE}
+#experience .achievement-event{margin:0 0 5px;color:#F8FAFC;font-size:20px;font-weight:650;line-height:1.35;letter-spacing:-.02em;overflow-wrap:anywhere}
+#experience .achievement-result{margin:0;color:#BDC7D7;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+#experience .achievement-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:13px 0 0;padding-top:12px;border-top:1px solid #FFFFFF14;color:#AEB8CB;font-size:13px;line-height:1.45}
+#experience .achievement-meta-divider{width:3px;height:3px;border-radius:50%;background:#C084FC}
+#experience .achievement-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+#experience .achievement-links a{display:inline-flex;align-items:center;gap:6px;color:#D8B4FE;font-size:13px;font-weight:600;text-underline-offset:3px}
+#experience .achievement-links a:hover{color:#F0ABCE}
+@media(max-width:860px){#experience .experience-achievement-grid{grid-template-columns:minmax(0,1fr);gap:34px}#experience .experience-column>.section-title,#experience .recognition-section>.section-title{min-height:0;margin-bottom:20px}#experience .experience-timeline{max-width:700px}#experience .achievement-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#experience .achievement-list{grid-template-columns:minmax(0,1fr)}#experience .achievement-card{padding:18px;gap:13px}}
+@media(max-width:380px){#experience .experience-entry{grid-template-columns:38px minmax(0,1fr);gap:12px}#experience .experience-icon{flex-basis:36px;width:36px;height:36px}#experience .achievement-card{grid-template-columns:42px minmax(0,1fr);gap:11px;padding:15px}#experience .achievement-icon{width:40px;height:40px}#experience .achievement-event{font-size:18px}}
+@media(prefers-reduced-motion:reduce){#experience .experience-icon,#experience .experience-content,#experience .achievement-card{transition:none}}
+/* Give the role, institution, and supporting description distinct emphasis. */
+#experience .experience-role{color:#C4A6FF;font-size:10px;letter-spacing:.16em}
+#experience .experience-content h3{color:#FFFFFF;font-size:22px;font-weight:650}
+#experience .experience-organization{color:#AEB8CB;font-size:14px;font-weight:500}
+#experience .experience-description{max-width:540px;color:#E2E8F0;font-size:15px;line-height:1.8}
+/* Simpler certificate header and focused gallery controls. */
+.certificate-section-heading{margin-bottom:18px;gap:0}
+.certificate-section-heading h2{font-size:clamp(28px,3.2vw,36px)}
+.certificate-subtitle{margin-top:6px;color:#B8C2D3;font-size:14px}
+.certificate-labels{margin-bottom:7px}
+.certificate-type{color:#D8B4FE;border-color:#A855F755;background:#A855F710}
+.certificate-more{border-color:#60A5FA;background:#60A5FA;color:#0B1020;transition:background-color .18s ease,border-color .18s ease,transform .18s ease}
+.certificate-more:hover{border-color:#93C5FD;background:#93C5FD;transform:translateY(-1px)}
+.certificate-more:focus-visible{outline:2px solid #F8FAFC;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.certificate-more{transition:none}}
+/* Certificate heading and category selector refinements. */
+.certificate-section-heading{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-bottom:22px}
+.certificate-section-icon{width:42px;height:42px;flex-basis:42px;border-radius:10px}
+.certificate-section-heading h2{font-size:clamp(28px,3.2vw,36px)}
+.certificate-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;padding:10px;border:1px solid #303A53;border-radius:12px;background:#101827}
+.certificate-filter{min-height:42px;padding:8px 12px;border:1px solid #35415E;border-radius:8px;background:#151B2E;color:#CBD5E1}
+.certificate-filter:hover{border-color:#7652B8;background:#1A1A30;color:#F3E8FF}
+.certificate-filter[aria-pressed="true"]{border-color:#9B77D8;background:#251D37;color:#F3E8FF;box-shadow:inset 0 -2px 0 #A855F7}
+.certificate-filter>span{background:#0B1020;color:#D8B4FE}
+@media(max-width:700px){.certificate-filters{flex-wrap:nowrap;overflow-x:auto;padding:8px}.certificate-filter{flex:0 0 auto}}
+@media(max-width:380px){.certificate-section-icon{width:38px;height:38px;flex-basis:38px}}
