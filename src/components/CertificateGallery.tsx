@@ -1,21 +1,30 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { useMemo, useState } from 'react'
-import { ExternalLink, FileBadge2, FileText } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Code2, ExternalLink, FileBadge2, FileText, Trophy, UsersRound } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 import type { Certificate, CertificateCategory } from '@/data/achievements'
 
 type CertificateGalleryProps = {
   certificates: Certificate[]
 }
 
-const categories: Array<'All' | CertificateCategory> = [
-  'All',
+const categories: CertificateCategory[] = [
   'Technical & Programs',
   'Hackathons & Competitions',
   'Leadership & Mentorship',
 ]
+
+const categoryIcons: Record<CertificateCategory, LucideIcon> = {
+  'Technical & Programs': Code2,
+  'Hackathons & Competitions': Trophy,
+  'Leadership & Mentorship': UsersRound,
+}
+
 const initialVisibleCount = 3
+const revealBatchSize = 3
 
 function isSupportedPublicFile(path?: string): path is string {
   return Boolean(path && !path.includes('..') && /^\/certificates\/[^?#]+\.(?:pdf|jpe?g|png|webp)$/i.test(path))
@@ -40,21 +49,20 @@ function validCertificateUrl(value?: string): value is string {
 }
 
 export default function CertificateGallery({ certificates }: CertificateGalleryProps) {
-  const [selectedCategory, setSelectedCategory] = useState<'All' | CertificateCategory>('All')
-  const [showAll, setShowAll] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState<CertificateCategory | null>(null)
+  const [visibleCount, setVisibleCount] = useState(initialVisibleCount)
 
-  const matchingCertificates = useMemo(() => {
-    const filtered = selectedCategory === 'All'
-      ? certificates
-      : certificates.filter(certificate => certificate.category === selectedCategory)
+  const categoryCertificates = useMemo(() => {
+    if (!selectedCategory) return []
 
-    const firstRowOrder = [
-      'national-ai-hackathon-2026',
-      'cosmos-hackathon-mentorship',
-      'hult-prize-nepal-nationals-finalist',
-    ]
+    const categoryItems = certificates.filter(certificate => certificate.category === selectedCategory)
+    const firstRowOrder = selectedCategory === 'Hackathons & Competitions'
+      ? ['national-ai-hackathon-2026', 'hult-prize-nepal-nationals-finalist', 'hult-prize-campus-round-winner']
+      : selectedCategory === 'Leadership & Mentorship'
+        ? ['cosmos-hackathon-mentorship']
+        : []
 
-    return [...filtered].sort((first, second) => {
+    return [...categoryItems].sort((first, second) => {
       const firstPriority = firstRowOrder.indexOf(first.id)
       const secondPriority = firstRowOrder.indexOf(second.id)
       if (firstPriority !== -1 || secondPriority !== -1) {
@@ -65,73 +73,81 @@ export default function CertificateGallery({ certificates }: CertificateGalleryP
     })
   }, [certificates, selectedCategory])
 
-  const visibleCertificates = showAll
-    ? matchingCertificates
-    : matchingCertificates.slice(0, initialVisibleCount)
-  const canExpand = matchingCertificates.length > initialVisibleCount
-
-  function selectCategory(category: 'All' | CertificateCategory) {
+  function selectCategory(category: CertificateCategory) {
     setSelectedCategory(category)
-    setShowAll(false)
+    setVisibleCount(initialVisibleCount)
+  }
+
+  function returnToCategories() {
+    setSelectedCategory(null)
+    setVisibleCount(initialVisibleCount)
   }
 
   return <section id="certificates" className="section certificate-section" aria-labelledby="certificates-heading">
-    <div className="wrap">
-      <div className="certificate-section-heading">
+    <div className="wrap certificate-page-content">
+      <Link className="certificate-back-link" href="/" aria-label="Back to the portfolio home page"><ArrowLeft size={16}/> Back to Portfolio</Link>
+
+      <header className="certificate-page-heading">
         <span className="certificate-section-icon" aria-hidden="true"><FileBadge2 size={22}/></span>
-        <h2 id="certificates-heading">Certificates</h2>
-      </div>
+        <h1 id="certificates-heading">Certificates &amp; Recognition</h1>
+        <p>Explore certificates from technical learning, competitions, and mentorship.</p>
+      </header>
 
-      <div className="certificate-filters" role="group" aria-label="Filter certificates by category">
+      {!selectedCategory ? <div className="certificate-category-grid" role="group" aria-label="Choose a certificate category">
         {categories.map(category => {
-          const count = category === 'All'
-            ? certificates.length
-            : certificates.filter(certificate => certificate.category === category).length
-          return <button
-            className="certificate-filter"
-            type="button"
-            key={category}
-            aria-pressed={selectedCategory === category}
-            onClick={() => selectCategory(category)}
-          >{category}<span>{count}</span></button>
+          const Icon = categoryIcons[category]
+          const count = certificates.filter(certificate => certificate.category === category).length
+          return <button className="certificate-category-card" type="button" key={category} onClick={() => selectCategory(category)}>
+            <span className="certificate-category-icon" aria-hidden="true"><Icon size={21}/></span>
+            <span className="certificate-category-name">{category}</span>
+            <span className="certificate-category-count">{count} {count === 1 ? 'certificate' : 'certificates'}</span>
+            <ArrowRight className="certificate-category-arrow" size={17} aria-hidden="true"/>
+          </button>
         })}
-      </div>
+      </div> : <div className="certificate-category-view">
+        <div className="certificate-selected-heading">
+          <button className="certificate-back-categories" type="button" onClick={returnToCategories}><ArrowLeft size={15}/> All categories</button>
+          <h2>{selectedCategory}</h2>
+          <p>{categoryCertificates.length} {categoryCertificates.length === 1 ? 'certificate' : 'certificates'}</p>
+        </div>
 
-      {certificates.length === 0 ? <p className="certificate-empty">No certificates have been added yet. Add real certificate details in <code>src/data/achievements.ts</code>.</p>
-        : matchingCertificates.length === 0 ? <p className="certificate-empty">No certificates in this category yet.</p>
-          : <>
-            <div className="certificate-grid">
-              {visibleCertificates.map(certificate => {
-                const viewUrl = validCertificateUrl(certificate.file) ? certificate.file : undefined
-                const previewPath = isImagePath(certificate.previewImage)
-                  ? certificate.previewImage
-                  : isImagePath(certificate.file) ? certificate.file : undefined
-                const issuer = certificate.event && certificate.event !== certificate.title
-                  ? certificate.event
-                  : certificate.organization || certificate.event
+        {categoryCertificates.length === 0 ? <p className="certificate-empty">No certificates in this category yet.</p> : <>
+          <div className="certificate-grid">
+            {categoryCertificates.slice(0, visibleCount).map(certificate => {
+              const viewUrl = validCertificateUrl(certificate.file) ? certificate.file : undefined
+              const previewPath = isImagePath(certificate.previewImage)
+                ? certificate.previewImage
+                : isImagePath(certificate.file) ? certificate.file : undefined
+              const context = certificate.event && certificate.event !== certificate.title ? certificate.event : undefined
 
-                return <article className="certificate-card" key={certificate.id}>
-                  <div className="certificate-preview">
-                    {previewPath
-                      ? <Image src={previewPath} alt={certificate.imageAlt || `${certificate.title} certificate preview`} width={480} height={320} sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" loading="lazy"/>
-                      : <span className="certificate-pdf-icon" aria-hidden="true"><FileText size={32}/><small>{viewUrl ? 'CERTIFICATE' : 'FILE NEEDED'}</small></span>}
+              return <article className="certificate-card" key={certificate.id}>
+                <div className="certificate-preview">
+                  {previewPath
+                    ? <Image src={previewPath} alt={certificate.imageAlt || `${certificate.title} certificate preview`} width={480} height={320} sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" loading="lazy"/>
+                    : <span className="certificate-pdf-icon" aria-hidden="true"><FileText size={32}/><small>{viewUrl ? 'CERTIFICATE' : 'FILE NEEDED'}</small></span>}
+                </div>
+                <div className="certificate-info">
+                  <div className="certificate-labels"><span className="certificate-type">{certificate.type || 'Certificate'}</span></div>
+                  <h3>{certificate.title}</h3>
+                  {context && <p className="certificate-context">{context}</p>}
+                  {(certificate.organization || certificate.year) && <p className="certificate-meta">{certificate.organization}{certificate.organization && certificate.year && <span aria-hidden="true"> · </span>}{certificate.year}</p>}
+                  <div className="certificate-actions">
+                    {viewUrl
+                      ? <a className="view-certificate" href={viewUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${certificate.title} certificate`}>View Certificate <ExternalLink size={14}/></a>
+                      : <span className="certificate-missing-file">Certificate file not available</span>}
+                    {isHttpUrl(certificate.verificationUrl) && <a className="verify-certificate" href={certificate.verificationUrl} target="_blank" rel="noopener noreferrer" aria-label={`Verify ${certificate.title}`}>Verify <ExternalLink size={14}/></a>}
                   </div>
-                  <div className="certificate-info">
-                    <div className="certificate-labels"><span className="certificate-type">{certificate.type || 'Certificate'}</span></div>
-                    <h3>{certificate.title}</h3>
-                    {(issuer || certificate.year) && <p className="certificate-meta">{issuer}{issuer && certificate.year && <span aria-hidden="true"> · </span>}{certificate.year}</p>}
-                    <div className="certificate-actions">
-                      {viewUrl
-                        ? <a className="view-certificate" href={viewUrl} target="_blank" rel="noopener noreferrer" aria-label={`View ${certificate.title} certificate`}>View Certificate <ExternalLink size={14}/></a>
-                        : <span className="certificate-missing-file">Add the certificate file to enable viewing</span>}
-                      {isHttpUrl(certificate.verificationUrl) && <a className="verify-certificate" href={certificate.verificationUrl} target="_blank" rel="noopener noreferrer" aria-label={`Verify ${certificate.title}`}>Verify <ExternalLink size={14}/></a>}
-                    </div>
-                  </div>
-                </article>
-              })}
-            </div>
-            {canExpand && <div className="certificate-more-wrap"><button className="certificate-more" type="button" onClick={() => setShowAll(value => !value)} aria-expanded={showAll}>{showAll ? 'Show Less' : 'Show More Certificates'}</button></div>}
-          </>}
+                </div>
+              </article>
+            })}
+          </div>
+          {categoryCertificates.length > initialVisibleCount && <div className="certificate-more-wrap">
+            {visibleCount < categoryCertificates.length
+              ? <button className="certificate-more" type="button" onClick={() => setVisibleCount(count => Math.min(count + revealBatchSize, categoryCertificates.length))}>Show More Certificates</button>
+              : <button className="certificate-more" type="button" onClick={() => setVisibleCount(initialVisibleCount)}>Show Less</button>}
+          </div>}
+        </>}
+      </div>}
     </div>
   </section>
 }
