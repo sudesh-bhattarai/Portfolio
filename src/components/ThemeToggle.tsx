@@ -13,10 +13,22 @@ export default function ThemeToggle() {
   function toggleTheme() {
     const nextLight = !light
     document.documentElement.dataset.theme = nextLight ? 'light' : 'dark'
+    try {
+      localStorage.setItem('portfolio-theme', nextLight ? 'light' : 'dark')
+    } catch {}
     setLight(nextLight)
   }
 
-  return <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={`Switch to ${light ? 'dark' : 'light'} theme`} aria-pressed={light}>
-    {light ? <Moon size={16}/> : <Sun size={16}/>}<span>{light ? 'Dark' : 'Light'}</span>
-  </button>
+  return (
+    <button
+      className="theme-toggle"
+      type="button"
+      onClick={toggleTheme}
+      aria-label={`Switch to ${light ? 'dark' : 'light'} theme`}
+      aria-pressed={light}
+    >
+      {light ? <Moon size={16} /> : <Sun size={16} />}
+      <span>{light ? 'Dark' : 'Light'}</span>
+    </button>
+  )
 }
