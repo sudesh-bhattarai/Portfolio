@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
-// EDITABLE SEO: update the title, description, and social metadata here.
 export const metadata: Metadata = {
   title: 'Sudesh Bhattarai | IT Student & Developer',
   description: 'Portfolio of Sudesh Bhattarai, an IT student and aspiring software developer.',
@@ -13,8 +12,22 @@ export const metadata: Metadata = {
   icons: { icon: '/favicon.svg' },
 }
 
-export const viewport: Viewport = { themeColor: '#0B1020' }
+export const viewport: Viewport = {
+  themeColor: '#0B1020',
+}
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" suppressHydrationWarning><body><script dangerouslySetInnerHTML={{ __html: `document.documentElement.dataset.theme='dark'` }}/>{children}</body></html>
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{document.documentElement.dataset.theme=localStorage.getItem('portfolio-theme')==='light'?'light':'dark'}catch{document.documentElement.dataset.theme='dark'}",
+          }}
+        />
+        {children}
+      </body>
+    </html>
+  )
 }
