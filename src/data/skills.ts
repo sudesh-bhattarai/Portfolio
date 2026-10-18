@@ -1,6 +1,19 @@
-import { Braces, Code2, Database, GitBranch, Layers3 } from 'lucide-react'
+import { Blocks, Braces, Code2, Database, GitBranch, Layers3, Waypoints } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
-export const skillGroups = [
+type SkillItem = {
+  name: string
+  logo?: string
+  icon?: LucideIcon
+}
+
+type SkillGroup = {
+  title: string
+  icon: LucideIcon
+  items: SkillItem[]
+}
+
+export const skillGroups: SkillGroup[] = [
   {
     title: 'Programming Languages',
     icon: Braces,
@@ -49,6 +62,9 @@ export const skillGroups = [
   {
     title: 'Computer Science Fundamentals',
     icon: Braces,
-    items: [{ name: 'Data Structures & Algorithms (DSA)' }],
+    items: [
+      { name: 'DSA', icon: Waypoints },
+      { name: 'OOP', icon: Blocks },
+    ],
   },
 ]

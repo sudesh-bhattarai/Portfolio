@@ -15,7 +15,18 @@ export type Achievement = {
   verificationUrl?: string
 }
 
-export type CertificateType = 'Participation' | 'Completion' | 'Finalist recognition' | 'Award' | 'Technical certification' | 'Training' | 'Workshop' | 'Seminar' | 'Program' | 'Recognition' | 'Appreciation'
+export type CertificateType =
+  | 'Participation'
+  | 'Completion'
+  | 'Finalist recognition'
+  | 'Award'
+  | 'Technical certification'
+  | 'Training'
+  | 'Workshop'
+  | 'Seminar'
+  | 'Program'
+  | 'Recognition'
+  | 'Appreciation'
 
 export type CertificateCategory = 'Technical & Programs' | 'Hackathons & Competitions' | 'Leadership & Mentorship'
 
@@ -68,10 +79,6 @@ export const achievements: Achievement[] = [
   },
 ]
 
-// Add only real credentials you intend to publish. Put files in the matching
-// public/certificates/<category>/ folder. Use root-relative paths for file and
-// previewImage, for example '/certificates/leadership-mentorship/mentor-certificate.pdf'.
-// Add only certificates you are comfortable publishing.
 export const certificates: Certificate[] = [
   {
     id: 'codestorm-2025-recognition',

@@ -1,8 +1,8 @@
-// EDITABLE PROFILE: replace placeholders with your own information and links.
 export const personalInfo = {
   name: 'Sudesh Bhattarai',
   firstName: 'Sudesh',
   photo: '/profile-photo.jpg',
+  brandPhoto: '/brand-photo/brand-photo.jpeg',
   role: 'IT Student & Aspiring Software Developer',
   description: "I'm an IT student interested in software development, backend engineering, and building practical technology solutions.",
   email: 'bhattaraisudesh08@gmail.com',
@@ -23,7 +23,8 @@ export const personalInfo = {
   },
   about: [
     'Hi, I’m Sudesh Bhattarai, an IT student and aspiring software developer. I enjoy learning new technologies and exploring different areas of software development.',
-    'I’m especially interested in backend development and building useful applications that solve real-world problems. I enjoy working on projects where I can turn ideas into practical solutions.',
+    'I’m especially interested in backend development and building useful applications that solve ' +
+      'real-world problems. I enjoy working on projects where I can turn ideas into practical solutions.',
     'I’m always eager to learn, improve my skills, and grow as a developer. My goal is to keep learning, keep building, and create something meaningful through technology.',
-  ]
+  ],
 }
