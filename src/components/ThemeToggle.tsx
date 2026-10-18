@@ -13,9 +13,6 @@ export default function ThemeToggle() {
   function toggleTheme() {
     const nextLight = !light
     document.documentElement.dataset.theme = nextLight ? 'light' : 'dark'
-    try {
-      localStorage.setItem('portfolio-theme', nextLight ? 'light' : 'dark')
-    } catch {}
     setLight(nextLight)
   }
 
