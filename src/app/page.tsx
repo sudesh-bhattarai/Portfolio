@@ -249,8 +249,7 @@ export default function HomePage() {
             <a
               className="button button-quiet"
               href={personalInfo.resume}
-              target="_blank"
-              rel="noreferrer"
+              download="Sudesh-Bhattarai-Resume.pdf"
             >
               Download Resume <ArrowDown size={15} />
             </a>
