@@ -1,7 +1,7 @@
 /**
  * Add verified recognition in achievements and publishable documents in
  * certificates. Put certificate files under public/certificates/ and use
- * root-relative paths such as '/certificates/event-certificate.pdf'.
+ * relative paths such as './certificates/event-certificate.pdf'.
  */
 export type Achievement = {
   title: string
@@ -88,7 +88,7 @@ export const certificates: Certificate[] = [
     category: 'Hackathons & Competitions',
     year: '2025',
     type: 'Recognition',
-    file: '/certificates/hackathons-competitions/codestorm-2025-recognition.png',
+    file: './certificates/hackathons-competitions/codestorm-2025-recognition.png',
     imageAlt: 'CodeStorm 2025 certificate of recognition for Sudesh Bhattarai',
   },
   {
@@ -99,7 +99,7 @@ export const certificates: Certificate[] = [
     category: 'Hackathons & Competitions',
     year: '2026',
     type: 'Finalist recognition',
-    file: '/certificates/hackathons-competitions/hult-prize-nepal-nationals-finalist.jpg',
+    file: './certificates/hackathons-competitions/hult-prize-nepal-nationals-finalist.jpg',
     imageAlt: 'Hult Prize 2026 Nepal National Competition finalist certificate for Sudesh Bhattarai',
     featured: true,
   },
@@ -111,7 +111,7 @@ export const certificates: Certificate[] = [
     category: 'Hackathons & Competitions',
     year: '2026',
     type: 'Award',
-    file: '/certificates/hackathons-competitions/hult-prize-campus-round-winner.jpeg',
+    file: './certificates/hackathons-competitions/hult-prize-campus-round-winner.jpeg',
     imageAlt: 'Hult Prize OnCampus Main Event 2026 winner certificate for Sudesh Bhattarai',
     featured: true,
   },
@@ -123,7 +123,7 @@ export const certificates: Certificate[] = [
     category: 'Hackathons & Competitions',
     year: '2026',
     type: 'Participation',
-    file: '/certificates/hackathons-competitions/national-ai-hackathon-2026-participation.jpeg',
+    file: './certificates/hackathons-competitions/national-ai-hackathon-2026-participation.jpeg',
     imageAlt: 'National AI Hackathon 2026 participation certificate for Sudesh Bhattarai',
   },
   {
@@ -134,7 +134,7 @@ export const certificates: Certificate[] = [
     category: 'Leadership & Mentorship',
     year: '2026',
     type: 'Appreciation',
-    file: '/certificates/leadership-mentorship/cosmos-hackathon-mentorship.jpeg',
+    file: './certificates/leadership-mentorship/cosmos-hackathon-mentorship.jpeg',
     imageAlt: 'Certificate of appreciation for mentoring during the Cosmos Hackathon in June 2026',
     featured: true,
   },
@@ -146,7 +146,7 @@ export const certificates: Certificate[] = [
     category: 'Technical & Programs',
     year: '2026',
     type: 'Participation',
-    file: '/certificates/technical-programs/cybersecurity-101-workshop.png',
+    file: './certificates/technical-programs/cybersecurity-101-workshop.png',
     imageAlt: 'Certificate of participation in Lakshyarambha Cybersecurity 101 on July 11, 2026',
   },
   {
@@ -156,7 +156,7 @@ export const certificates: Certificate[] = [
     organization: 'CSIT Association of Nepal',
     category: 'Technical & Programs',
     type: 'Workshop',
-    file: '/certificates/technical-programs/portfolio-website-essentials-workshop.png',
+    file: './certificates/technical-programs/portfolio-website-essentials-workshop.png',
     imageAlt: 'Certificate of participation in the Portfolio Website Essentials virtual workshop',
   },
   {
@@ -166,7 +166,7 @@ export const certificates: Certificate[] = [
     organization: 'ICT Club',
     category: 'Technical & Programs',
     type: 'Training',
-    file: '/certificates/technical-programs/python-git-training.jpg',
+    file: './certificates/technical-programs/python-git-training.jpg',
     imageAlt: 'Certificate for completing Python and Git training organized by the ICT Club',
   },
 ]

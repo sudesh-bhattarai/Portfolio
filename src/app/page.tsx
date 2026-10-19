@@ -53,10 +53,10 @@ function isHttpUrl(value?: string): value is string {
   }
 }
 function isAchievementImage(value?: string): value is string {
-  return Boolean(value && !value.includes('..') && /^\/(?:achievements|certificates)\/[^?#]+\.(?:jpe?g|png)$/i.test(value))
+  return Boolean(value && /^\.\/(?:achievements|certificates)\/[^?#]+\.(?:jpe?g|png)$/i.test(value))
 }
 function isCertificatePdf(value?: string): value is string {
-  return Boolean(value && !value.includes('..') && /^\/certificates\/[^?#]+\.pdf$/i.test(value))
+  return Boolean(value && /^\.\/certificates\/[^?#]+\.pdf$/i.test(value))
 }
 
 function SectionTitle({ title, id }: { title: string; id?: string }) {

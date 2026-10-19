@@ -38,7 +38,7 @@ function isSupportedPublicFile(path?: string): path is string {
   return Boolean(
     path &&
     !path.includes('..') &&
-    /^\/certificates\/[^?#]+\.(?:pdf|jpe?g|png|webp)$/i.test(path),
+    /^\.\/certificates\/[^?#]+\.(?:pdf|jpe?g|png|webp)$/i.test(path),
   )
 }
 
@@ -46,7 +46,7 @@ function isImagePath(path?: string): path is string {
   return Boolean(
     path &&
     !path.includes('..') &&
-    /^\/certificates\/[^?#]+\.(?:jpe?g|png|webp)$/i.test(path),
+    /^\.\/certificates\/[^?#]+\.(?:jpe?g|png|webp)$/i.test(path),
   )
 }
 
@@ -62,6 +62,10 @@ function isHttpUrl(value?: string): value is string {
 
 function validCertificateUrl(value?: string): value is string {
   return isSupportedPublicFile(value) || isHttpUrl(value)
+}
+
+function certificatePageAssetPath(path: string): string {
+  return path.replace(/^\.\//, './../')
 }
 
 export default function CertificateGallery({ certificates }: CertificateGalleryProps) {
@@ -193,12 +197,12 @@ export default function CertificateGallery({ certificates }: CertificateGalleryP
                 <div className="certificate-grid">
                   {categoryCertificates.slice(0, visibleCount).map(certificate => {
                     const viewUrl = validCertificateUrl(certificate.file)
-                      ? certificate.file
+                      ? certificatePageAssetPath(certificate.file)
                       : undefined
                     const previewPath = isImagePath(certificate.previewImage)
-                      ? certificate.previewImage
+                      ? certificatePageAssetPath(certificate.previewImage)
                       : isImagePath(certificate.file)
-                        ? certificate.file
+                        ? certificatePageAssetPath(certificate.file)
                         : undefined
                     const context =
                       certificate.event && certificate.event !== certificate.title

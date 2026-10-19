@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: 'Portfolio of Sudesh Bhattarai, an IT student and aspiring software developer.',
     type: 'website',
   },
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: './../favicon.svg' },
 }
 
 export const viewport: Viewport = {
