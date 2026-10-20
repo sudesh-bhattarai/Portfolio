@@ -1,8 +1,11 @@
+import profilePhoto from '../../public/profile-photo.jpg'
+import brandPhoto from '../../public/brand-photo/brand-photo.jpeg'
+
 export const personalInfo = {
   name: 'Sudesh Bhattarai',
   firstName: 'Sudesh',
-  photo: './profile-photo.jpg',
-  brandPhoto: './brand-photo/brand-photo.jpeg',
+  photo: profilePhoto,
+  brandPhoto,
   role: 'IT Student & Aspiring Software Developer',
   description: "I'm an IT student interested in software development, backend engineering, and building practical technology solutions.",
   email: 'bhattaraisudesh08@gmail.com',

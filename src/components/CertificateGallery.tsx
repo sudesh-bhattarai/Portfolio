@@ -13,7 +13,9 @@ import {
   UsersRound,
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import type { StaticImageData } from 'next/image'
 import type { Certificate, CertificateCategory } from '@/data/achievements'
+import { relativeStaticImage } from '@/lib/relativeImage'
 
 type CertificateGalleryProps = {
   certificates: Certificate[]
@@ -34,20 +36,14 @@ const categoryIcons: Record<CertificateCategory, LucideIcon> = {
 const initialVisibleCount = 3
 const revealBatchSize = 3
 
-function isSupportedPublicFile(path?: string): path is string {
-  return Boolean(
-    path &&
-    !path.includes('..') &&
-    /^\.\/certificates\/[^?#]+\.(?:pdf|jpe?g|png|webp)$/i.test(path),
-  )
+function isSupportedPublicFile(path?: string | StaticImageData): path is string | StaticImageData {
+  if (path && typeof path !== 'string') return true
+  return Boolean(path && /^\.\/certificates\/[^?#]+\.(?:pdf|jpe?g|png|webp)$/i.test(path))
 }
 
-function isImagePath(path?: string): path is string {
-  return Boolean(
-    path &&
-    !path.includes('..') &&
-    /^\.\/certificates\/[^?#]+\.(?:jpe?g|png|webp)$/i.test(path),
-  )
+function isImagePath(path?: string | StaticImageData): path is string | StaticImageData {
+  if (path && typeof path !== 'string') return true
+  return Boolean(path && /^\.\/certificates\/[^?#]+\.(?:jpe?g|png|webp)$/i.test(path))
 }
 
 function isHttpUrl(value?: string): value is string {
@@ -60,12 +56,20 @@ function isHttpUrl(value?: string): value is string {
   }
 }
 
-function validCertificateUrl(value?: string): value is string {
-  return isSupportedPublicFile(value) || isHttpUrl(value)
+function validCertificateUrl(value?: string | StaticImageData): value is string | StaticImageData {
+  return isSupportedPublicFile(value) || (typeof value === 'string' && isHttpUrl(value))
 }
 
-function certificatePageAssetPath(path: string): string {
-  return path.replace(/^\.\//, './../')
+function certificatePageAssetPath(path: string | StaticImageData): string | StaticImageData {
+  return typeof path === 'string'
+    ? path.replace(/^\.\//, './../')
+    : relativeStaticImage(path, 1)
+}
+
+function certificatePageHref(path: string | StaticImageData): string {
+  return typeof path === 'string'
+    ? path.replace(/^\.\//, './../')
+    : relativeStaticImage(path, 1).src
 }
 
 export default function CertificateGallery({ certificates }: CertificateGalleryProps) {
@@ -197,7 +201,7 @@ export default function CertificateGallery({ certificates }: CertificateGalleryP
                 <div className="certificate-grid">
                   {categoryCertificates.slice(0, visibleCount).map(certificate => {
                     const viewUrl = validCertificateUrl(certificate.file)
-                      ? certificatePageAssetPath(certificate.file)
+                      ? certificatePageHref(certificate.file)
                       : undefined
                     const previewPath = isImagePath(certificate.previewImage)
                       ? certificatePageAssetPath(certificate.previewImage)

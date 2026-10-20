@@ -31,6 +31,7 @@ import { personalInfo } from '@/data/personalInfo'
 import { projects } from '@/data/projects'
 import { skillGroups } from '@/data/skills'
 import { achievements, experiences } from '@/data/achievements'
+import { relativeStaticImage } from '@/lib/relativeImage'
 import ThemeToggle from '@/components/ThemeToggle'
 
 const nav = [
@@ -152,7 +153,7 @@ export default function HomePage() {
             aria-label={`${personalInfo.name}, home`}
           >
             <Image
-              src={personalInfo.brandPhoto}
+              src={relativeStaticImage(personalInfo.brandPhoto)}
               alt=""
               width={40}
               height={40}
@@ -271,7 +272,7 @@ export default function HomePage() {
             <div className="portrait-frame">
               {personalInfo.photo ? (
                 <Image
-                  src={personalInfo.photo}
+                  src={relativeStaticImage(personalInfo.photo)}
                   alt={`Portrait of ${personalInfo.name}`}
                   fill
                   priority
@@ -401,7 +402,7 @@ export default function HomePage() {
                   {project.image ? (
                     <img
                       className="project-screenshot"
-                      src={project.image}
+                      src={relativeStaticImage(project.image).src}
                       alt={`${project.name} application screenshot`}
                       loading="lazy"
                     />
@@ -417,7 +418,7 @@ export default function HomePage() {
                   {project.logo && (
                     <img
                       className="project-logo"
-                      src={project.logo}
+                      src={project.logo ? relativeStaticImage(project.logo).src : undefined}
                       alt={`${project.name} logo`}
                       loading="lazy"
                     />
@@ -749,7 +750,7 @@ export default function HomePage() {
             aria-label={`${personalInfo.name}, back to top`}
           >
             <Image
-              src={personalInfo.brandPhoto}
+              src={relativeStaticImage(personalInfo.brandPhoto)}
               alt=""
               width={36}
               height={36}
