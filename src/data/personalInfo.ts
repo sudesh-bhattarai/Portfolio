@@ -1,8 +1,11 @@
+import profilePhoto from '../../public/profile-photo.jpg'
+import brandPhoto from '../../public/brand-photo/brand-photo.jpeg'
+
 export const personalInfo = {
   name: 'Sudesh Bhattarai',
   firstName: 'Sudesh',
-  photo: '/profile-photo.jpg',
-  brandPhoto: '/brand-photo/brand-photo.jpeg',
+  photo: profilePhoto,
+  brandPhoto,
   role: 'IT Student & Aspiring Software Developer',
   description: "I'm an IT student interested in software development, backend engineering, and building practical technology solutions.",
   email: 'bhattaraisudesh08@gmail.com',
@@ -11,7 +14,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/sudesh-bhattarai-782b52362/',
   instagram: 'https://www.instagram.com/sudesh_bhattarai_88',
   facebook: 'https://www.facebook.com/sudesh.bhattarai.1',
-  resume: '/resume.pdf',
+  resume: './Resume.pdf',
   education: 'Bachelor of Engineering in Information Technology',
   institution: 'Cosmos College of Management and Technology',
   educationPeriod: '2024 – Present',

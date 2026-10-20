@@ -1,3 +1,8 @@
+import companyAssetsImage from '../../public/projects/company-assets-tracker/screenshot.png'
+import companyAssetsLogo from '../../public/projects/company-assets-tracker/logo.jpeg'
+import onlineVotingImage from '../../public/projects/online-voting-system/screenshot.png'
+import type { StaticImageData } from 'next/image'
+
 /**
  * Project content and asset configuration.
  * Place supplied images under public/projects/<project-folder>/ and update the
@@ -8,8 +13,8 @@ type Project = {
   name: string
   description: string
   technologies: string[]
-  image: string
-  logo?: string
+  image: StaticImageData
+  logo?: StaticImageData
   demo?: string
   github: string
 }
@@ -21,8 +26,8 @@ export const projects: Project[] = [
     description:
       'A web-based asset management system that helps companies manage employees, equipment assignments, asset returns, and maintenance records through a centralized dashboard.',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'Vanilla JavaScript', 'Node.js', 'Express', 'PostgreSQL'],
-    image: '/projects/company-assets-tracker/screenshot.png',
-    logo: '/projects/company-assets-tracker/logo.jpeg',
+    image: companyAssetsImage,
+    logo: companyAssetsLogo,
     demo: 'https://company-assets-tracker.vercel.app/index.html',
     github: 'https://github.com/sudesh-bhattarai/Company_Assets_Tracker',
   },
@@ -31,7 +36,8 @@ export const projects: Project[] = [
     name: 'Online Voting System',
     description: 'A web-based voting application built with a browser-based frontend, Java backend, and PostgreSQL database.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Java', 'PostgreSQL'],
-    image: '/projects/online-voting-system/screenshot.png',
+    image: onlineVotingImage,
     github: 'https://github.com/ghimirebabin07/Online_Voting_Sytem_Java',
   },
 ]
+
