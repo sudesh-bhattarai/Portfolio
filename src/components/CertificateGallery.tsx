@@ -135,7 +135,7 @@ export default function CertificateGallery({ certificates }: CertificateGalleryP
           )}
           <Link
             className="certificate-back-link"
-            href="/"
+            href="/#certificates"
             aria-label="Back to the portfolio home page"
           >
             <ArrowLeft size={16} /> Back to Portfolio

@@ -73,6 +73,7 @@ export default function HomePage() {
   const [activeSection, setActiveSection] = useState('home')
   const [formStatus, setFormStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'unconfigured'>('idle')
   const isSubmitting = useRef(false)
+  const pendingMobileSection = useRef<string | null>(null)
   const reduced = useReducedMotion()
 
   useEffect(() => {
@@ -143,6 +144,27 @@ export default function HomePage() {
     }
   }
 
+  function handleMobileNavigation(event: React.MouseEvent<HTMLAnchorElement>, id: string) {
+    event.preventDefault()
+    pendingMobileSection.current = id
+    setActiveSection(id)
+    if (window.location.hash !== `#${id}`) {
+      window.history.pushState(null, '', `#${id}`)
+    }
+    setMenuOpen(false)
+  }
+
+  function finishMobileNavigation() {
+    const id = pendingMobileSection.current
+    if (!id) return
+
+    pendingMobileSection.current = null
+    document.getElementById(id)?.scrollIntoView({
+      behavior: reduced ? 'auto' : 'smooth',
+      block: 'start',
+    })
+  }
+
   return (
     <>
       <header className="topbar">
@@ -192,7 +214,7 @@ export default function HomePage() {
           </button>
         </div>
 
-        <AnimatePresence>
+        <AnimatePresence onExitComplete={finishMobileNavigation}>
           {menuOpen && (
             <motion.nav
               className="mobile-nav"
@@ -212,10 +234,7 @@ export default function HomePage() {
                     className={isActive ? 'active' : undefined}
                     aria-current={isActive ? 'location' : undefined}
                     href={item.href}
-                    onClick={() => {
-                      setActiveSection(id)
-                      setMenuOpen(false)
-                    }}
+                    onClick={event => handleMobileNavigation(event, id)}
                   >
                     {item.label}
                     <ArrowUpRight size={14} />
