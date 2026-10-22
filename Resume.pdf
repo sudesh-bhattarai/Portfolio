@@ -1,126 +1,1080 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%âãÏÓ
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 9 0 R
+/Producer (pypdf)
 >>
 endobj
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
 >>
 endobj
 3 0 obj
 <<
-/BaseFont /Times-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 11 0 R
 >>
 endobj
 4 0 obj
 <<
-/BaseFont /Times-Roman /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/Contents 17 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+/Annots [ 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 18 0 R ]
 >>
 endobj
 5 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/sudesh-bhattarai)
->> /Border [ 0 0 0 ] /Rect [ 158 727.3698 186.8 738.8898 ] /Subtype /Link /Type /Annot
+/Length 9195
 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 52 772.8898 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 4 Tm /F2 19 Tf 23 TL 175.1668 0 Td (Sudesh Bhattarai) Tj T* -175.1668 0 Td ET
+Q
+Q
+q
+1 0 0 1 52 768.8898 cm
+Q
+q
+1 0 0 1 52 756.8898 cm
+q
+BT 1 0 0 1 0 2.6 Tm 105.7658 0 Td 12 TL /F3 9.4 Tf .066667 .066667 .066667 rg (Kathmandu, Nepal  ) Tj (\267) Tj (  +977 9767479502  ) Tj (\267) Tj (  bhattaraisudesh08@gmail.com) Tj T* -105.7658 0 Td ET
+Q
+Q
+q
+1 0 0 1 52 746.8898 cm
+Q
+q
+1 0 0 1 46 720.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 8 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (LINKS) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 RG
+n 0 1.8 m 28.8 1.8 l S
+n 33.6 1.8 m 68.7936 1.8 l S
+n 73.5936 1.8 m 107.7312 1.8 l S
+BT 1 0 0 1 0 3 Tm 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (GitHub) Tj (, ) Tj (LinkedIn) Tj (, Portfolio) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 26.6 m 503.2756 26.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 643.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 58.4 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (PROFILE) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 53.4 Tm /F3 9.6 Tf 12.6 TL (Information Technology student with hands-on experience building full-stack web applications using) Tj T* (JavaScript, Node.js, Express, Java and PostgreSQL. Comfortable taking a project from idea to) Tj T* (deployment, and experienced in team collaboration through Git and GitHub. Participant in the) Tj T* (National AI Hackathon 2026 team, eager to keep learning and solve real-world problems with) Tj T* (software.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 77 m 503.2756 77 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 457.6898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 167 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (PROJECTS) Tj ET
+Q
+q
+1 0 0 1 112 163.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Company Assets Tracker) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 RG
+n 30.5408 1.8 m 74 1.8 l S
+n 81.2 1.8 m 110 1.8 l S
+BT 1 0 0 1 0 3 Tm 30.5408 0 Td 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (Live Demo) Tj ( \267 ) Tj (GitHub) Tj T* -30.5408 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 151 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (HTML, CSS, Bootstrap, Vanilla JavaScript, Node.js, Express, PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 149 cm
+Q
+q
+1 0 0 1 112 123.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Built a web-based asset management system for managing employees, equipment assignments,) Tj T* (asset returns and maintenance records from one centralized dashboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 97.4 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Developed a full-stack application with a Node.js and Express backend and a PostgreSQL) Tj T* (database.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 83.6 cm
+q
+BT 1 0 0 1 0 3 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 3 Tm /F3 9.6 Tf 12.6 TL (Designed a responsive interface with Bootstrap and deployed it on Vercel.) Tj T* ET
+Q
+Q
+BT 1 0 0 1 0 67.6 Tm  T* ET
+q
+1 0 0 1 112 73.6 cm
+Q
+q
+1 0 0 1 112 59.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Online Voting System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+.066667 .066667 .066667 RG
+n 81.2 1.8 m 110 1.8 l S
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 81.2 0 Td (GitHub) Tj T* -81.2 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 47 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (HTML, CSS, JavaScript, Java, PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 45 cm
+Q
+q
+1 0 0 1 112 19.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Developed a web-based voting application with a browser-based frontend, a Java backend and a) Tj T* (PostgreSQL database.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 3 Tm /F3 9.6 Tf 12.6 TL (Collaborated with a teammate using Git and GitHub.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 185.6 m 503.2756 185.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 306.4898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 132.6 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (HACKATHONS) Tj ET
+Q
+BT 1 0 0 1 112 133.2 Tm  T* ET
+q
+1 0 0 1 0 113.2 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.8 Tm /F3 9.2 Tf 12 TL (2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 111.2 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (National AI Hackathon 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 54.8 0 Td (Team Cosmos) Tj T* -54.8 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 98.6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (LifeLink) Tj /F3 9.6 Tf ( - Emergency Response Coordination System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 86 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (Python, Flask, PostgreSQL, HTML, CSS, JavaScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 84 cm
+Q
+q
+1 0 0 1 112 58.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL -0.072255 Tw (Built a team-based system that connects accident reporting, admin verification, ambulance dispatch) Tj T* 0 Tw (and hospital recommendation in one workflow.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 32.4 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Implemented phone and OTP login with JWT sessions, and report capture with camera,) Tj T* (microphone, speech recognition and GPS location.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Built an admin dashboard with keyword-based severity analysis and DBSCAN-style clustering to) Tj T* (flag duplicate reports; added a hospital recommendation engine and live ambulance ETA tracking.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 151.2 m 503.2756 151.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 247.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 40 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (EDUCATION) Tj ET
+Q
+BT 1 0 0 1 112 40.6 Tm  T* ET
+q
+1 0 0 1 0 20.6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.8 Tm /F3 9.2 Tf 12 TL (2024 \227 2028 \(Expected\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 18.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Bachelor of Engineering in Information Technology) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 65.2064 0 Td (Kathmandu) Tj T* -65.2064 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL (Pokhara University, Cosmos College of Management and Technology) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 58.6 m 503.2756 58.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 162.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 66.4 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (SKILLS) Tj ET
+Q
+q
+1 0 0 1 112 64.4 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Languages:) Tj /F3 9.6 Tf ( JavaScript, Python, Java, C, C++) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 62.4 cm
+Q
+q
+1 0 0 1 112 49.8 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Frontend:) Tj /F3 9.6 Tf ( HTML, CSS, Bootstrap, Vanilla JavaScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 47.8 cm
+Q
+q
+1 0 0 1 112 35.2 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Backend:) Tj /F3 9.6 Tf ( Flask, FastAPI, Node.js, Express) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 33.2 cm
+Q
+q
+1 0 0 1 112 20.6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Database:) Tj /F3 9.6 Tf ( PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 18.6 cm
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Tools:) Tj /F3 9.6 Tf ( Git, GitHub, VS Code) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 85 m 503.2756 85 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 136.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 8 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (LANGUAGES) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (Nepali  ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (  English) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 26.6 m 503.2756 26.6 l S
+Q
+Q
+Q
+ 
+
+endstream
 endobj
 6 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://www.linkedin.com/in/sudesh-bhattarai-782b52362/)
->> /Border [ 0 0 0 ] /Rect [ 191.6 727.3698 226.7936 738.8898 ] /Subtype /Link /Type /Annot
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
 >>
 endobj
 7 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://company-assets-tracker.vercel.app/index.html)
->> /Border [ 0 0 0 ] /Rect [ 469.8164 623.7698 513.2756 635.2898 ] /Subtype /Link /Type /Annot
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 8 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/sudesh-bhattarai/Company_Assets_Tracker)
->> /Border [ 0 0 0 ] /Rect [ 520.4756 623.7698 549.2756 635.2898 ] /Subtype /Link /Type /Annot
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 9 0 obj
 <<
-/BaseFont /Times-Italic /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 10 0 obj
 <<
-/A <<
-/S /URI /Type /Action /URI (https://github.com/ghimirebabin07/Online_Voting_Sytem_Java)
->> /Border [ 0 0 0 ] /Rect [ 520.4756 520.4898 549.2756 533.0898 ] /Subtype /Link /Type /Annot
+/BaseFont /Times-Italic
+/Encoding /WinAnsiEncoding
+/Name /F4
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 11 0 obj
 <<
-/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 10 0 R ] /Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 14 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 
-  /Trans <<
-
->> /Type /Page
 >>
 endobj
 12 0 obj
 <<
-/PageMode /UseNone /Pages 14 0 R /Type /Catalog
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057sudesh\055bhattarai)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 158 727.3698 186.8 738.8898 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 13 0 obj
 <<
-/Author (Sudesh Bhattarai) /CreationDate (D:20261018100509+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261018100509+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (Sudesh Bhattarai - Resume) /Trapped /False
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057www\056linkedin\056com\057in\057sudesh\055bhattarai\055782b52362\057)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 191.6 727.3698 226.7936 738.8898 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 14 0 obj
 <<
-/Count 1 /Kids [ 11 0 R ] /Type /Pages
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057company\055assets\055tracker\056vercel\056app\057index\056html)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 469.8164 623.7698 513.2756 635.2898 ]
+/Subtype /Link
+/Type /Annot
 >>
 endobj
 15 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2630
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057sudesh\055bhattarai\057Company\137Assets\137Tracker)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 520.4756 623.7698 549.2756 635.2898 ]
+/Subtype /Link
+/Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057ghimirebabin07\057Online\137Voting\137Sytem\137Java)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 520.4756 520.4898 549.2756 533.0898 ]
+/Subtype /Link
+/Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/Length 9195
 >>
 stream
-Gb!#^>@X-^(4OT5300Z5_f?"N^8uC"lUfNnG$jeaK5B!:@K]HGoBYR1_LNZn`(>-AVMP``l!2!p*J"5PrYY3EQi`c\nBVIE$kn41(q+$D0S]2Wk`6s`]$`=Lo1[F'#<q!q".JZ;57b1eq>:M21[5-_WY?g>_&/!M9hS/sG`HCGY)hU/"MMo4U;[1/(8NJf-h2*dr.NuME4gH:$M5'_2MH2M>,^g3a)/r1+dAt:67bKJ1s^<El%Sh@'\.ed0Ym%3C5n+tqa/Fo9!W-`LMN?B"@*=M]/*_gI097$n2qP4Y%N(`7lS%4RBBOBU^;/C5P(,XM&*D(0uA[0SOTj>:*\CDGc%X3[1RL@TNi`_Y"OP>:Y`()]OTE(b**V9_KpHrY$(<j6QClSR?a2K5)$PeU['QHWKEF[=ieCth>IrYmIDY=f4mLF@%t9pf*!FFg9P[721gD;%4nt0glU?TmZq`t]@_PW`KtRi[@A^BodepZj6W@,UMPAPQLT"8P*j'k%t,4+F!qmKmXAAeYN;q5q"o-)QJ)<[V5gDNd\YmcQ=aS?X(.jPf.GmTK3d5XSV%q)U\m9'I/E<n@Pg8uV3eZ2_m)%F/PP9-[JtQJCrU]lb*Z`Ocu>,PK[!RpPaFjA$'0):J-@94EJt^\5BFtWRY;HQb;b?3O(QQ\3A*o:hSUS/!m1$Z%cr'A/.9+"mCqFinj"NFO7NttSOHNT=nL\Nc^`Gc^PGb&KeO!oEmEq1lWAd<QD/UMR3iV?E\GugOE:,ZL*b&'9-K<DJWeQA6o7]l.Ri%fEjeHu#iZ7b8l>ptP)q-Q9'^N6flFe,N)=kUMH(+'#qt<mc3]q*gps*N,1lB\7&o2OY#'0B0V$569iiso#>4-CUKDJ2BatFq4Hm)2oE@l/-u_eAj%%+Q8>q1+V1l:!]gT\KjWi_`HW0P]BXV@lO*3q*m<G)sR`IF,_06Cecf_4B:4+j&JPq7qW?7EZAs4j%;<]4HGRrgHj'`,/U7c&u!Cu<OhVfY9Q0B71nqP#:B7S[`294;H$A:RS"jUSOlF^QhH[pB)7ob9S6KrKKOa0Dp<g?W]>q<-s!P#)')lqJ'D[2SMQt%+JHqTmaIY(O#_=-DJS5(DZ3+8m>8l"q@r#f.$faRboV88Ce^66@eKC-6':Rd[$7=>S7EM)X^gLoP._t2HqrA'QRm=h,5p^%!V!g`oEj!cDgk(j:<5XpGM,_-G`<Dh0Y&4tDT!C\g[3(YP;L]4Q;F*Sqc):(,/[HQ45Uo*1Z>]PL>!F\O"ZBAffe,`<3`hPkO1!:tuGW.!Ar"hs<O^^%VKL];rf%>3)Xjc=jRJ2Y(d"LMtXR/p;.W_UZP',8G$WV`_;h5I(/C'B<.-sA*M]6tZ^Oc;$oX[r^Ir$-@[qS7;8B[[33>R!n+!NQ:N*p<i]@<f0D4mo8.)dJ:$iHY[Urg(5)`kR%nkD!UBc!tYbI5*S_65C&2d$c',5biF8@44I^3:t;.)=^)n_t2/iCeI"C*:!I^)>T3o="Dm.,Tc$nbpE\DEFC;55;W1hF<n;a<+@aF^WIYZc@[gl8ljiJ]A?X?:CVJ@&M#5`d7,0f_L&bF';Lde@RJjT\S29:t9H"oCt97B>\pOgIHBq#E-$4=0l8QU+K:Ef":J9X5W<0@;p@1h."fL'8q7RL>V?N<r=hnfR\;22bl.J<I:Glg<[>=A%gNuJEu%9h"uWqMZDD7[Ik#9+Bm8n<hugq;7IM#Mo#RG2c"+5!V9m9^l4-k)C\!Gi#WlUGtRlP>NurN;g"_,]Z:079S(\L,u6:b"1Kt-er/:JE*",6&lRMo.mtI?9?DX^lqTItJ(VVXXD>C[RZ7KdA((bj5cdRF7K(C5.3W5)7RLur8JoHfGDFY;ED^5ME^XW3_#rfhXK".&/tFU.amu4:a@R9#gCq/':S@'+'mX%np4u0\`RZ210n>IEDW$ZIqcUcWpD4akr4!3O#TG)C7\M^2L!WDiI1tC&_Q]5%7Hj>m""99#Md8!Dn"`Vb+j%!-Wjm"=0QBY4=f$,ZR@LSo78@R,OB.laYr&.*@^d"U7lfZ"@f7GY=@He%Kim.E.\#5B'uieO%Tb,(Y[$/K,ZtkelDDj%-E"asm(?@*p6Wl66^ip*hqIdn-"IM5;@t3Y=hj_jXr0f/[4=pb2NKAT-DGj$6N0(a67MVPE2>LV#Y3CR2MmMCG*!!Yp0*M\%Od.AriQ[hr9X=F0GrVNmj&IQ^8!R'KlucJJDWj=Cq)8q:R#B3mX!Mi,DsmIo>*\M<ReGG=-/:Q&h]9nF'pd`QSG@(()*?fa8Q%Z2-`X-Fk<e[7fDt]-6!oaHhk\IMYL,+\7PCB_?kV90F)lS!77nd&.$-Kk>^+(pLZogjQg.,]f\@sJ!8j7iuP[E\E<*tdrjRD!R]uOBKY/M'[Z9LVm#*2,b$I7m)?`21;S-d^?/k(;*W&"T0DYG=&mLpd_'e5l*$6JU?[Xu7"=H5o)=%A:ODZ&=OJ("h9W`:KbN"YGA'ebh@!5G_qWSf:%/%6X(q+3cSrB4B$&B!/VXb_?b.3FGOOt5Q\5BL8QT#$`Yd$:pAdQiJe/XD2aNDkZiLAlG/9*uIY\dKL=_dLLR72M]k$Wp[fYXF*qB)4NWVI58PS2RnKtG%o4@tBr=+4<Q0/~>endstream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 52 772.8898 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 4 Tm /F2 19 Tf 23 TL 175.1668 0 Td (Sudesh Bhattarai) Tj T* -175.1668 0 Td ET
+Q
+Q
+q
+1 0 0 1 52 768.8898 cm
+Q
+q
+1 0 0 1 52 756.8898 cm
+q
+BT 1 0 0 1 0 2.6 Tm 105.7658 0 Td 12 TL /F3 9.4 Tf .066667 .066667 .066667 rg (Kathmandu, Nepal  ) Tj (\267) Tj (  +977 9767479502  ) Tj (\267) Tj (  bhattaraisudesh08@gmail.com) Tj T* -105.7658 0 Td ET
+Q
+Q
+q
+1 0 0 1 52 746.8898 cm
+Q
+q
+1 0 0 1 46 720.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 8 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (LINKS) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 RG
+n 0 1.8 m 28.8 1.8 l S
+n 33.6 1.8 m 68.7936 1.8 l S
+n 73.5936 1.8 m 107.7312 1.8 l S
+BT 1 0 0 1 0 3 Tm 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (GitHub) Tj (, ) Tj (LinkedIn) Tj (, Portfolio) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 26.6 m 503.2756 26.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 643.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 58.4 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (PROFILE) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 53.4 Tm /F3 9.6 Tf 12.6 TL (Information Technology student with hands-on experience building full-stack web applications using) Tj T* (JavaScript, Node.js, Express, Java and PostgreSQL. Comfortable taking a project from idea to) Tj T* (deployment, and experienced in team collaboration through Git and GitHub. Participant in the) Tj T* (National AI Hackathon 2026 team, eager to keep learning and solve real-world problems with) Tj T* (software.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 77 m 503.2756 77 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 457.6898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 167 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (PROJECTS) Tj ET
+Q
+q
+1 0 0 1 112 163.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Company Assets Tracker) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 RG
+n 30.5408 1.8 m 74 1.8 l S
+n 81.2 1.8 m 110 1.8 l S
+BT 1 0 0 1 0 3 Tm 30.5408 0 Td 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (Live Demo) Tj ( \267 ) Tj (GitHub) Tj T* -30.5408 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 151 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (HTML, CSS, Bootstrap, Vanilla JavaScript, Node.js, Express, PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 149 cm
+Q
+q
+1 0 0 1 112 123.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Built a web-based asset management system for managing employees, equipment assignments,) Tj T* (asset returns and maintenance records from one centralized dashboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 97.4 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Developed a full-stack application with a Node.js and Express backend and a PostgreSQL) Tj T* (database.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 83.6 cm
+q
+BT 1 0 0 1 0 3 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 3 Tm /F3 9.6 Tf 12.6 TL (Designed a responsive interface with Bootstrap and deployed it on Vercel.) Tj T* ET
+Q
+Q
+BT 1 0 0 1 0 67.6 Tm  T* ET
+q
+1 0 0 1 112 73.6 cm
+Q
+q
+1 0 0 1 112 59.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Online Voting System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+.066667 .066667 .066667 RG
+n 81.2 1.8 m 110 1.8 l S
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 81.2 0 Td (GitHub) Tj T* -81.2 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 47 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (HTML, CSS, JavaScript, Java, PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 45 cm
+Q
+q
+1 0 0 1 112 19.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Developed a web-based voting application with a browser-based frontend, a Java backend and a) Tj T* (PostgreSQL database.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 3 Tm /F3 9.6 Tf 12.6 TL (Collaborated with a teammate using Git and GitHub.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 185.6 m 503.2756 185.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 306.4898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 132.6 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (HACKATHONS) Tj ET
+Q
+BT 1 0 0 1 112 133.2 Tm  T* ET
+q
+1 0 0 1 0 113.2 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.8 Tm /F3 9.2 Tf 12 TL (2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 111.2 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (National AI Hackathon 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 54.8 0 Td (Team Cosmos) Tj T* -54.8 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 98.6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (LifeLink) Tj /F3 9.6 Tf ( - Emergency Response Coordination System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 86 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F4 9.6 Tf 12.6 TL (Python, Flask, PostgreSQL, HTML, CSS, JavaScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 84 cm
+Q
+q
+1 0 0 1 112 58.8 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL -0.072255 Tw (Built a team-based system that connects accident reporting, admin verification, ambulance dispatch) Tj T* 0 Tw (and hospital recommendation in one workflow.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 32.4 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Implemented phone and OTP login with JWT sessions, and report capture with camera,) Tj T* (microphone, speech recognition and GPS location.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 15.6 Tm /F1 10 Tf 12 TL .066667 .066667 .066667 rg (\177) Tj ET
+.066667 .066667 .066667 rg
+BT 1 0 0 1 10 15.6 Tm /F3 9.6 Tf 12.6 TL (Built an admin dashboard with keyword-based severity analysis and DBSCAN-style clustering to) Tj T* (flag duplicate reports; added a hospital recommendation engine and live ambulance ETA tracking.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 151.2 m 503.2756 151.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 247.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 40 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (EDUCATION) Tj ET
+Q
+BT 1 0 0 1 112 40.6 Tm  T* ET
+q
+1 0 0 1 0 20.6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.8 Tm /F3 9.2 Tf 12 TL (2024 \227 2028 \(Expected\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 18.6 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 0 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 2.4 Tm /F3 11.6 Tf 14 TL (Bachelor of Engineering in Information Technology) Tj T* ET
+Q
+Q
+q
+1 0 0 1 281.2756 1.4 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL 65.2064 0 Td (Kathmandu) Tj T* -65.2064 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 112 6 cm
+q
+.066667 .066667 .066667 rg
+BT 1 0 0 1 0 3 Tm /F3 9.6 Tf 12.6 TL (Pokhara University, Cosmos College of Management and Technology) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 58.6 m 503.2756 58.6 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 162.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 66.4 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (SKILLS) Tj ET
+Q
+q
+1 0 0 1 112 64.4 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Languages:) Tj /F3 9.6 Tf ( JavaScript, Python, Java, C, C++) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 62.4 cm
+Q
+q
+1 0 0 1 112 49.8 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Frontend:) Tj /F3 9.6 Tf ( HTML, CSS, Bootstrap, Vanilla JavaScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 47.8 cm
+Q
+q
+1 0 0 1 112 35.2 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Backend:) Tj /F3 9.6 Tf ( Flask, FastAPI, Node.js, Express) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 33.2 cm
+Q
+q
+1 0 0 1 112 20.6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Database:) Tj /F3 9.6 Tf ( PostgreSQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 112 18.6 cm
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F2 9.6 Tf .066667 .066667 .066667 rg (Tools:) Tj /F3 9.6 Tf ( Git, GitHub, VS Code) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 85 m 503.2756 85 l S
+Q
+Q
+Q
+q
+1 0 0 1 46 136.2898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 8 cm
+BT 1 0 0 1 0 2 Tm /F3 8.6 Tf 10.32 TL 1.6 Tc .266667 .266667 .266667 rg (LANGUAGES) Tj ET
+Q
+q
+1 0 0 1 112 6 cm
+q
+BT 1 0 0 1 0 3 Tm 12.6 TL /F3 9.6 Tf .066667 .066667 .066667 rg (Nepali  ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj ( ) Tj (  English) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.066667 .066667 .066667 RG
+.9 w
+n 0 26.6 m 503.2756 26.6 l S
+Q
+Q
+Q
+ 
+
+endstream
+endobj
+18 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [ 231.5936 727.37 265.7312 738.89 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057sudeshbhattarai\056com\056np)
+>>
+/P 4 0 R
+>>
 endobj
 xref
-0 16
+0 19
 0000000000 65535 f 
-0000000061 00000 n 
-0000000122 00000 n 
-0000000229 00000 n 
-0000000337 00000 n 
-0000000446 00000 n 
-0000000625 00000 n 
-0000000829 00000 n 
-0000001033 00000 n 
-0000001243 00000 n 
-0000001353 00000 n 
-0000001564 00000 n 
-0000001813 00000 n 
-0000001883 00000 n 
-0000002179 00000 n 
-0000002240 00000 n 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000179 00000 n 
+0000000433 00000 n 
+0000009680 00000 n 
+0000009742 00000 n 
+0000009849 00000 n 
+0000009957 00000 n 
+0000010066 00000 n 
+0000010177 00000 n 
+0000010199 00000 n 
+0000010397 00000 n 
+0000010632 00000 n 
+0000010864 00000 n 
+0000011102 00000 n 
+0000011340 00000 n 
+0000020588 00000 n 
 trailer
 <<
-/ID 
-[<4c13fe5aa5ff19f0675f92f887d11707><4c13fe5aa5ff19f0675f92f887d11707>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 13 0 R
-/Root 12 0 R
-/Size 16
+/Size 19
+/Root 3 0 R
+/Info 1 0 R
 >>
 startxref
-4962
+20791
 %%EOF
